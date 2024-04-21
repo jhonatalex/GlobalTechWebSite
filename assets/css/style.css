@@ -3494,6 +3494,42 @@ textarea {
 .footer-section-05 .widget-info ul li .info-text a:hover {
   color: #11ddf5; }
 
+.counter-wrap {
+  margin-bottom: 30px; }
+  .counter-wrap .col-xl-3 {
+    padding: 1rem; }
+    .counter-wrap .col-xl-3 .single-counter {
+      display: flex;
+      gap: 10px; }
+      .counter-wrap .col-xl-3 .single-counter .counter-img {
+        border: 1px solid rgba(41, 95, 149, 0.244);
+        width: 95px;
+        height: 95px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        background: white;
+        margin-right: 10px; }
+      .counter-wrap .col-xl-3 .single-counter .counter-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center; }
+        .counter-wrap .col-xl-3 .single-counter .counter-content .counter {
+          font-size: 40px;
+          line-height: 26px;
+          font-family: "Barlow", sans-serif;
+          font-weight: 700;
+          color: #086ad8;
+          margin-bottom: 15px; }
+        .counter-wrap .col-xl-3 .single-counter .counter-content p {
+          font-size: 12px;
+          line-height: 26px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #4c4d56; }
+
 /*--
 /*  24. Footer CSS
 /*----------------------------------------*/
