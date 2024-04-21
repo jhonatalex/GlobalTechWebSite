@@ -2744,7 +2744,8 @@ textarea {
 /*  16 - Blog CSS
 /*----------------------------------------*/
 .techwix-blog-section {
-  padding-bottom: 70px; }
+  padding-bottom: 70px;
+  display: none; }
 
 .techwix-blog-wrap {
   padding-top: 20px; }
@@ -3551,7 +3552,7 @@ textarea {
     line-height: 45px;
     font-size: 18px;
     color: #086ad8;
-    left: 0;
+    left: -1px;
     top: 0;
     height: 46px;
     width: 46px;
