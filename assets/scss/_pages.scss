@@ -2,41 +2,16 @@
 /*  4.1. Pages CSS (All Page Styles)
 /*----------------------------------------*/
 
-@import 'pages/hero';
-@import 'pages/service';
+@import "pages/hero";
+@import "pages/service";
 
-@import 'pages/contact';
+@import "pages/contact";
 
-@import 'pages/team';
-@import 'pages/blog';
+@import "pages/team";
+@import "pages/blog";
+@import "pages/thanks";
 
-@import 'pages/pricing';
+@import "pages/pricing";
 
-@import 'pages/page-banner';
-@import 'pages/blog-standard';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import "pages/page-banner";
+@import "pages/blog-standard";
