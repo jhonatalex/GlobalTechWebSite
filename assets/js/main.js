@@ -331,52 +331,58 @@ var swiper = new Swiper(".testimonial-02-active", {
 /*--    
         Brand Active
     -----------------------------------*/
-var swiper = new Swiper(".brand-active .swiper-container", {
-  slidesPerView: 5,
-  spaceBetween: 30,
-  loop: true,
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    576: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    992: {
-      slidesPerView: 5,
-    },
-  },
-});
+   var swiper = new Swiper(".brand-active .swiper-container", {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        animate:true,
+        loop: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 5,
+          },
+        },
+    });
+
 
 /*--    
         Testimonial Two Active
     -----------------------------------*/
-var swiper = new Swiper(".team-active", {
-  slidesPerView: 4,
-  loop: true,
-  pagination: {
-    el: ".team-active .swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    576: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    992: {
-      slidesPerView: 4,
-    },
-  },
-});
+
+    var swiper = new Swiper(".team-active", {
+        slidesPerView: 5,
+        loop: true,
+        pagination: {
+            el: ".team-active .swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 4,
+          },
+        },
+    });
+
+
+
 
 /*--    
       Progress Bar
@@ -393,10 +399,26 @@ if ($(".progress-line").length) {
   );
 }
 
-/*--
-        AOS
-    -----------------------------------*/
-AOS.init({
-  duration: 1200,
-  once: true,
-});
+
+    AOS.init({
+        duration: 1200,
+        once: true,
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const items = document.querySelectorAll('.timeline-item');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+          }
+        });
+      });
+    
+      items.forEach(item => {
+        observer.observe(item);
+      });
+    });
+    
+

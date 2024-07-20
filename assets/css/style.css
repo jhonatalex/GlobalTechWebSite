@@ -1374,6 +1374,7 @@ textarea {
       font-size: 12px;
       padding: 0 12px; } }
 
+
 .techwix-hero-section-02 {
   padding-top: 185px;
   padding-bottom: 310px;
@@ -3623,8 +3624,146 @@ textarea {
     transform: translateX(0); }
 
 .progress-wrap-3 {
-  box-shadow: inset 0 0 0 2px rgba(255, 85, 56, 0.2); }
-  .progress-wrap-3::after {
-    color: #ff5538; }
-  .progress-wrap-3 svg.progress-circle path {
-    stroke: #ff5538; }
+
+  box-shadow: inset 0 0 0 2px rgba(255, 85, 56, 0.2);
+}
+
+.progress-wrap-3::after {
+  color: #ff5538;
+}
+
+.progress-wrap-3 svg.progress-circle path {
+  stroke: #ff5538;
+}
+
+
+
+
+
+/* Basic Section Styles */
+.journey-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+.journey-content {
+  padding: 0;
+}
+
+.journey-content img {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+.journey-content h4,
+.journey-content p {
+  margin: 10px 0 0;
+  padding: 0 15px;
+}
+
+.section-title h2 {
+  color: #007bff;
+}
+
+.section-title h3 {
+  margin-bottom: 40px;
+}
+
+/* Timeline Styles */
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.timeline-item {
+  height: 470px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 18%;
+  padding-bottom: 10px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.timeline-item:hover {
+  transform: scale(1.05);
+}
+
+.timeline-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.timeline-content h4 {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  color: #777777;
+}
+
+.timeline-arrow {
+  font-size: 24px;
+  color: #007bff;
+  margin: 0 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.timeline-arrow:hover {
+  color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .timeline-item {
+    flex: 0 0 45%;
+  }
+  .timeline-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    flex: 0 0 90%;
+  }
+}
+
+.timeline-item.animate {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.single-brand {
+  text-align: center;
+  margin: 20px 0;
+}
+.single-brand img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto 10px;
+}
+.single-brand span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/*NUEVOS*/
+
+
