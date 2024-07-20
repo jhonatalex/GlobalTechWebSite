@@ -357,8 +357,9 @@
         Brand Active
     -----------------------------------*/
     var swiper = new Swiper(".brand-active .swiper-container", {
-        slidesPerView: 5,
+        slidesPerView: 6,
         spaceBetween: 30,
+        animate:true,
         loop: true,
         breakpoints: {
           0: {
@@ -381,7 +382,7 @@
         Testimonial Two Active
     -----------------------------------*/
     var swiper = new Swiper(".team-active", {
-        slidesPerView: 4,
+        slidesPerView: 5,
         loop: true,
         pagination: {
             el: ".team-active .swiper-pagination",
@@ -428,5 +429,19 @@
     });
 
 
-
+    document.addEventListener('DOMContentLoaded', function() {
+      const items = document.querySelectorAll('.timeline-item');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+          }
+        });
+      });
+    
+      items.forEach(item => {
+        observer.observe(item);
+      });
+    });
+    
 
