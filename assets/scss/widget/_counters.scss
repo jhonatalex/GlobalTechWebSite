@@ -1,0 +1,47 @@
+.counter-wrap {
+  margin-bottom: 30px;
+  .col-xl-3 {
+    padding: 1rem;
+
+    .single-counter {
+      display: flex;
+      gap: 10px;
+
+      .counter-img {
+        border: 1px solid rgba(41, 95, 149, 0.244);
+        width: 95px;
+        height: 95px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        background: rgb(255, 255, 255);
+        margin-right: 10px;
+      }
+
+      .counter-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .counter {
+          font-size: 40px;
+          line-height: 26px;
+          font-family: "Barlow", sans-serif;
+          font-weight: 700;
+          color: #086ad8;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 26px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #4c4d56;
+        }
+      }
+    }
+  }
+}
